@@ -2,17 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Box, Button } from '@mui/material';
 import styled from 'styled-components';
-import Students from "../assets/students.svg";
+import Students from "../assets/stubackimg.svg";
 import { LightPurpleButton } from '../components/buttonStyles';
 import './Home.css';
 const Homepage = () => {
     return (
         <StyledContainer>
             <Grid container spacing={0}>
-                <Grid item xs={12} md={6}>
-                    <img src={Students} alt="students" style={{ width: '100%' }} />
-                </Grid>
-                <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6}>
                     <StyledPaper elevation={3}>
                         <StyledTitle>
                             {/* Welcome
@@ -54,6 +51,10 @@ const Homepage = () => {
                         </StyledBox>
                     </StyledPaper>
                 </Grid>
+                <Grid item xs={12} md={6} style={{ display: 'flex'}} >
+                    <img src={Students} alt="students" style={{ width: '100%' }} />
+                </Grid>
+                
             </Grid>
         </StyledContainer>
     );
@@ -85,7 +86,7 @@ const StyledBox = styled(Box)`
 const StyledTitle = styled.h1`
   font-size: 3rem;
   color: #252525;
-  /* font-family: "Manrope"; */
+//   font-family: "Manrope"; 
   font-weight: bold;
   padding-top: 0;
   letter-spacing: normal;
@@ -93,7 +94,7 @@ const StyledTitle = styled.h1`
 `;
 
 const StyledText = styled.p`
-  /* color: #550080; */
+//   color: #550080; 
   margin-top: 30px;
   margin-bottom: 30px; 
   letter-spacing: normal;
